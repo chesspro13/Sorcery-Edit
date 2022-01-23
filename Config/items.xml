@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SorceryEdit>
+  <!-- 
+  <set xpath="/items/item[contains(@name,'spellcast')]/property[@name='Action0']/property[@name='Sound_start']/value[@value='fartSound']"/> 
+  <set xpath="/items/item[contains(@name,'spellcast')]/property[@class='Action0']/property[@name='Sound_start']/@value">fartSound</set>
+  -->
+  <!-- <set xpath="/items/item[contains(@name,'spellcast')]/property[@class='Action0']/property[@name='Sound_start']/@value">fartSound</set> -->
+  <set xpath="/items/item[contains(@name,'spellcast')]/property[@class='Action0']/property[@name='Sound_start']/@value">fartSounding</set> 
+  <!-- <set xpath="/items/item[contains(@name,'spellcast')]/property[@class='Action0']/property[@name='Sound_start']/value[@value='fartSound']"/> -->
+</SorceryEdit>

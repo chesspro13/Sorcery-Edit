@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Sorcery>
+<!--
+
+	<append xpath="/entityclasses/entityclass[contains(@name,'sorceryFallenFire')]">
+		<effect_group name="Base Effects">
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="buffEntity_SorceryManage"/>00
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" target="self" parent_transform="RightHand" prefab="handFire" local_offset=".14,0.035,0"/>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" target="self" parent_transform="LeftHand" prefab="handFire" local_offset="-.14,-0.05,0"/>	
+		</effect_group>
+	</append>
+	<setattribute xpath="/entityclasses/entityclass[contains(@name,'sorceryFallenIce')]/proptery[@name='HandItem']" name="value">handIce</setattribute>
+	
+	<append xpath="/entityclasses/entityclass[contains(@name,'sorceryFallenLightning')]">
+		<property name="HandItem" value="handLightning"/>	
+	</append>
+
+	<removeattribute xpath="/entityclasses/entityclass[@name,'sorceryFallenIce']/property[@name='HandItem']"/>
+	<removeattribute xpath="/entityclasses/entityclass[@name,'sorceryFallenFire']/property[@name='HandItem']" />
+	<removeattribute xpath="/entityclasses/entityclass[@name,'sorceryFallenLightning']/property[@name='HandItem']" />
+
+	<removeattribute xpath="/entityclasses/entityclass[contains(@name,'sorceryFallenIce')]/@HandItem"/>
+	<removeattribute xpath="/entityclasses/entityclass[contains(@name,'sorceryFallenFire')]/@HandItem" />
+	<removeattribute xpath="/entityclasses/entityclass[contains(@name,'sorceryFallenLightning')]/@HandItem" />
+
+
+
+	<remove xpath="/entityclasses/entityclass[contains(@name,'sorceryFallenIce')]/property[@name='HandItem']"/>
+	<remove xpath="/entityclasses/entityclass[contains(@name,'sorceryFallenFire')]/property[@name='HandItem']" />
+	<remove xpath="/entityclasses/entityclass[contains(@name,'sorceryFallenLightning')]/property[@name='HandItem']" />
+
+-->
+
+	<!-- Failed -->
+	<!--
+	<removeattribute xpath="/entityclasses/entityclass@sorceryFallenIce/@HandItem"/>
+	<removeattribute xpath="/entityclasses/entityclass@sorceryFallenIce/property[@name='HandItem']"/>
+	<removeattribute xpath="/entityclasses/entityclass[@name,'sorceryFallenLightning']/property[@name,'HandItem']" />
+	-->
+	
+	<remove xpath="/entity_classes/entity_class[contains(@name,'sorceryFallen')]/property[@name='HandItem']"/>
+	<remove xpath="/entity_classes/entity_class[contains(@name,'sorceryFallen')]/effect_group[@name='Base Effects']/triggered_effect[@action='AttachPrefabToEntity']"/>
+	
+</Sorcery>

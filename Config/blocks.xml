@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Sorcery>
+	<append xpath="/blocks/block[contains(@name,'conjureFire')]">
+		<property name="OnlySimpleRotations" value="false"/>
+	</append>
+
+	<append xpath="/blocks/block[contains(@name,'sorceryAlchemyStation')]">
+	</append>
+</Sorcery>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SorceryEdit>
+  <!-- 
+  <set xpath="/items/item[contains(@name,'spellcast')]/property[@name='Action0']/property[@name='Sound_start']/value[@value='fartSound']"/> 
+  <set xpath="/items/item[contains(@name,'spellcast')]/property[@class='Action0']/property[@name='Sound_start']/@value">fartSound</set>
+  <set xpath="/items/item[contains(@name,'spellcast')]/property[@name='Action0']/property[@name='Sound_start']/value[@value='fartSound']"/
+  <append xpath="/Sounds">
+    <SoundDataNode name="fartSound"> 
+        <AudioClip ClipName="#@modfolder:Resources/fartSound.unity3d?fart"/>
+      </SoundDataNode>
+		</append>
+		-->
+	<append xpath="/Sounds">
+		<SoundDataNode name="fartSounding"> 
+			<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+			<AudioClip ClipName="#@modfolder:Resources/fartSound.unity3d?Fart"/>
+		</SoundDataNode>
+	</append>
+	<!-- <set xpath="/Sounds/SoundDataNode[@name='fartSound']/AudioClip/@ClipName">#@modfolder:Resources/fartSound.unity3d?Fart</set> -->
+	
+	
+	
+	
+	
+</SorceryEdit>

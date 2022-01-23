@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Sorcery>
+<!--
+	<append xpath="/buffs/buff[contains(@name,'buffEntity_FireTouched')]">
+		<effect_group name="FX: Walker">			
+			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" target="self" parent_transform="RightHand" prefab="handFire" local_offset=".14,0.035,0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" target="self" parent_transform="LeftHand" prefab="handFire" local_offset="-.14,-0.05,0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" target="self" parent_transform="RightHand" prefab="handFire"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" target="self" parent_transform="LeftHand" prefab="handFire"/>
+		</effect_group>
+	</append>
+	<append xpath="/buffs/buff[contains(@name,'buffEntity_IceTouched')]">
+		<effect_group name="FX: Walker">
+			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" target="self" parent_transform="RightHand" prefab="handIce" local_offset=".14,0.035,0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" target="self" parent_transform="LeftHand" prefab="handIce" local_offset="-.14,-0.05,0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" target="self" parent_transform="RightHand" prefab="handIce"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" target="self" parent_transform="LeftHand" prefab="handIce"/>
+		</effect_group>
+	</append>
+	<append xpath="/buffs/buff[contains(@name,'buffEntity_LightningTouched')]">
+		<effect_group name="FX: Walker">
+			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" target="self" parent_transform="RightHand" prefab="handLightning" local_offset=".14,0.035,0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" target="self" parent_transform="LeftHand" prefab="handLightning" local_offset="-.14,-0.05,0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" target="self" parent_transform="RightHand" prefab="handLightning"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" target="self" parent_transform="LeftHand" prefab="handLightning"/>
+		</effect_group>
+	</append>-->
+
+  
+	<!-- <remove xpath="/buffs/buff[contains(@name,'IceTouched')]/effect_group[@name='Base Effects']/triggered_effect[@action='AttachPrefabToEntity']"/>	 -->
+	<!-- Failed
+	<remove xpath="/buffs/buff[contains(@name,'IceTouched')]/stack_type[@value='ignore']/effect_group[@name='FX: Walker']/triggered_effect[@trigger='onSelfBuffStart']"/>	
+	-->
+	
+	<remove xpath="/buffs/buff[contains(@name,'IceTouched')]/effect_group[@name='FX: Walker']/triggered_effect[@trigger='onSelfBuffStart']"/>	
+	<remove xpath="/buffs/buff[contains(@name,'FireTouched')]/effect_group[@name='FX: Walker']/triggered_effect[@trigger='onSelfBuffStart']"/>	
+	<remove xpath="/buffs/buff[contains(@name,'LightningTouched')]/effect_group[@name='FX: Walker']/triggered_effect[@trigger='onSelfBuffStart']"/>	
+	
+	<remove xpath="/buffs/buff[contains(@name,'IceTouched')]/effect_group[@name='FX: Walker']/triggered_effect[@trigger='onSelfBuffRemove']"/>	
+	<remove xpath="/buffs/buff[contains(@name,'FireTouched')]/effect_group[@name='FX: Walker']/triggered_effect[@trigger='onSelfBuffRemove']"/>	
+	<remove xpath="/buffs/buff[contains(@name,'LightningTouched')]/effect_group[@name='FX: Walker']/triggered_effect[@trigger='onSelfBuffRemove']"/>	
+	
+</Sorcery>
